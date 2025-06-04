@@ -170,7 +170,7 @@ After a zone has been successfully built on the associated DNS servers, they can
 >**Process all updates**
 >> Click the **_Process all updates_** icon in the upper right.
 
->> ![Process all updates](../../../images/modules/fmDNS/ProcessAllUpdates.png)
+>> ![Process all updates](../../../images/modules/common/ProcessAllUpdates.png)
 
 >> !!! warning
        This will process all available updates for all servers and zones.
