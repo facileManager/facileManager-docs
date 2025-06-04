@@ -2,7 +2,7 @@ site_name: 'facileManager Documentation'
 site_url: 'https://docs.facilemanager.com/'
 repo_url: 'https://github.com/facileManager/facileManager'
 repo_name: facileManager
-edit_uri: /facileManager/facileManager-docs/edit/main/docs
+edit_uri: /facileManager/facileManager-docs/edit/master/docs
 copyright:
 validation:
   links:
