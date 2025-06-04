@@ -6,8 +6,8 @@ validation:
   links:
     anchors: warn
 theme: 
-  # name: material
-  name: readthedocs
+  name: material
+  #name: readthedocs
   logo: images/fm.png
 
 nav:
