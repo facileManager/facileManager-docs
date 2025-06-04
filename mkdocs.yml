@@ -40,14 +40,14 @@ theme:
 nav:
   - 'Overview': index.md
   - 'Getting Started':
-    - 'Prerequisites': main/prerequisites.md
-    - 'Installation': main/basic-install.md
-    - 'Post-Install': main/post-install.md
-    - 'Updating': main/update.md
+    - 'Prerequisites': getting-started/prerequisites.md
+    - 'Installation': getting-started/basic-install.md
+    - 'Post-Install': getting-started/post-install.md
+    - 'Updating': getting-started/update.md
   - 'Administration':
-    - 'Settings': main/settings.md
-    - 'Users & Groups': main/user-management.md
-    - 'config.inc.php': main/config.inc.php.md
+    - 'Settings': admin/settings.md
+    - 'Users & Groups': admin/user-management.md
+    - 'config.inc.php': admin/config.inc.php.md
   - 'Modules':
     - 'Getting Started': modules/index.md
     - 'fmDHCP':

@@ -48,7 +48,7 @@ Print the client app version.
 #### Cron
 >Example: `sudo php client.php cron`
 
-If the client is setup to receive updates from the facileManager server via cron, this parameter will invoke the client to check for any pending configurations. This is also the parameter used to define the crontab job during [installation](../../main/basic-install.md#client-installation).
+If the client is setup to receive updates from the facileManager server via cron, this parameter will invoke the client to check for any pending configurations. This is also the parameter used to define the crontab job during [installation](../../getting-started/basic-install.md#client-installation).
 
 !!! note
     This parameter only works if the client is configured to receive updates via cron.
@@ -81,7 +81,7 @@ This parameter will force the client to communicate with the fM server via http 
 #### Skip sudoers
 >Example: `sudo php client.php install no-sudoers`
 
-During the [client installation](../../main/basic-install.md#client-installation), use this parameter to prevent the necessary sudoers entry from being made. This might be useful if you maintain the sudoers files by other means.
+During the [client installation](../../getting-started/basic-install.md#client-installation), use this parameter to prevent the necessary sudoers entry from being made. This might be useful if you maintain the sudoers files by other means.
 
 #### Disable Client Information Updates
 >Example: `sudo php client.php install no-update`
@@ -96,7 +96,7 @@ Use this parameter to test the API communication.
 #### Client Installation
 >Example: `sudo php client.php install`
 
-This parameter invokes the [client installer](../../main/basic-install.md#client-installation) which asks a series of questions to correctly configure the client.
+This parameter invokes the [client installer](../../getting-started/basic-install.md#client-installation) which asks a series of questions to correctly configure the client.
 
 #### Installation Options
 >Examples:

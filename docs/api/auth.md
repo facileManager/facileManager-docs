@@ -25,7 +25,7 @@ This key pair will be used to interact with the REST API.
 The key pair can be used by [`client.php`](./client.php.md) or any other typical means of interacting with a REST API.
 
 #### `client.php`
-After [client installation](../main/basic-install.md#client-installation), add the following to /usr/local/facileManager/config.inc.php on your client(s) from where you want to use the API (substitute the actual values with your own).
+After [client installation](../getting-started/basic-install.md#client-installation), add the following to /usr/local/facileManager/config.inc.php on your client(s) from where you want to use the API (substitute the actual values with your own).
 
 ```php
 define('APIKEY', 'UH27EOM9EUELLUKRX0KDZEAWGN');

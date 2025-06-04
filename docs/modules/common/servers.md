@@ -1,6 +1,6 @@
 ## Server Interaction
 ### Enable Server
-Once you have the [module activated](../../index.md#activate-modules) and the [client app installed](../../../main/basic-install.md#client-installation) on your DNS servers, you will want to review the DNS server's configuration to make sure the installer grabbed the correct information.
+Once you have the [module activated](../../index.md#activate-modules) and the [client app installed](../../../getting-started/basic-install.md#client-installation) on your DNS servers, you will want to review the DNS server's configuration to make sure the installer grabbed the correct information.
 
 Go to **_Config → Servers_** and review the servers.  Once everything is correct, you can enable the server by clicking on the slider in the **_Actions_** column of the server listing.
 
