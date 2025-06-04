@@ -1,14 +1,39 @@
 site_name: 'facileManager Documentation'
 site_url: 'https://docs.facilemanager.com/'
-repo_url: 'https://github.com/facileManager/facileManager-docs'
+repo_url: 'https://github.com/facileManager/facileManager'
 copyright:
 validation:
   links:
     anchors: warn
 theme: 
-  # name: material
-  name: readthedocs
+  name: material
+  # name: readthedocs
   logo: images/fm.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - header.autohide
+    - navigation.instant
+    - navigation.tracking
+    - navigation.footer
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.progress
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
 
 nav:
   - 'Overview': index.md
@@ -122,6 +147,12 @@ markdown_extensions:
   # - pymdownx.inlinehilite
   - pymdownx.arithmatex:
       generic: true
+
+plugins:
+  - search
+  - git-revision-date-localized
+  - git-committers:
+      repository: facileManager/facileManager-docs
 
 extra_css:
   - extra.css
