@@ -10,7 +10,7 @@
     --md-primary-fg-color: #3b4b58;
     --md-primary-fg-color--light: #3b4b58;
     --md-primary-fg-color--dark: #90030C;
-    --md-typeset-a-color: #5b88ad;
+    --md-typeset-a-color: #3b8dbc;
 }
 
 [dir="ltr"] .md-typeset blockquote {
@@ -24,3 +24,9 @@
     color: unset;
 }
 
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--active {
+    font-weight: bold;
+    border-left: 2px solid var(--md-typeset-a-color);
+    padding-left: 8px;
+    margin-left: -10px;
+}
