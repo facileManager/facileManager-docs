@@ -1,11 +1,10 @@
-## Modules
 Without modules, facileManager is pretty useless. The [module directory](https://www.facilemanager.com/modules/) allows you to find, learn about, and download the pieces that will make your job as a sysadmin easier. All of the modules in the online directory currently come included with the complete download package.
 
 If you want to download an individual module because you are building from the bare minimum (core package) or a new module was released after your installation, you can grab the package from the [module directory](https://www.facilemanager.com/modules/).
 
-### Install Modules
+## Install Modules
 
-#### Server
+### Server
 
 Once the desired module has been downloaded and extracted, move the module directory to your web server installation path.
 
@@ -22,7 +21,7 @@ Click **_Install Now_** to install the module.
 
 ![Installed Module](../images/InstalledModule.png)
 
-#### Client
+### Client
 
 If a module has a client app (a client directory will exist in the tar file), you will need to install it on the client system you will manage.
 
@@ -41,7 +40,7 @@ Complete the client installation by running the `client.php` script.
 !!! note "Example steps to install the fmWifi module"
     `sudo php /usr/local/facileManager/fmWifi/client.php install`
 
-### Activate Modules
+## Activate Modules
 
 Installed modules cannot be used until they get activated.
 
@@ -53,7 +52,7 @@ Now the module is installed, activated, and ready to be used.  You can switch be
 
 ![Hamburger Menu](../images/ModuleMenu.png)
 
-### Deactivate Modules
+## Deactivate Modules
 
 If you ever want to deactivate a module, simply click **_Deactivate_** below the module name.
 
@@ -62,7 +61,7 @@ If you ever want to deactivate a module, simply click **_Deactivate_** below the
 !!! note
     This does not delete any data from the database nor filesystem.  This action simply disables the use of the module.
 
-### Uninstall Modules
+## Uninstall Modules
 
 If you ever want to uninstall a module, you first need to deactivate it and then click **_Uninstall_** below the module name.
 

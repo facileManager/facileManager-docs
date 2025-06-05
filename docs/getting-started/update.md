@@ -17,7 +17,7 @@ This process will automatically download the latest facilemanager-core package a
          ```
 
 ### Alternative Method
-1. Make a backup of your database manually or by using the built-in tool via the UI.
+1. Make a backup of your database manually or by using the built-in tool via the UI (**_Admin → Tools_**).
 2. Make a backup of your config.inc.php file.
 3. Delete your old facileManager files.
 4. Extract/upload the new files from the server directory.
@@ -30,7 +30,10 @@ This process will automatically download the latest facilemanager-core package a
 
 ## Client Upgrade
 
-You can update the clients through the UI (**_Admin → Servers_**) or by running the following on the clients:
+You can update the clients through the UI (**_Config → Servers_**) 
+>![Client Software Upgrade](../images/UpgradeClient.png)
+
+...or by running the following on the clients:
 
 `sudo php /usr/local/facileManager/<module_name>/client.php upgrade`
 

@@ -1,6 +1,3 @@
-!!! warning "Documentation Missing"
-    To be written.
-
 ## Return Codes
 
 The following table lists all of the return codes that are returned from the REST APIs.
@@ -15,7 +12,7 @@ The following table lists all of the return codes that are returned from the RES
 | Forbidden | 403 | The request requires additional user privileges. |
 | Not Found | 404 | The server did not find anything that matches the request. |
 | Not Allowed | 405 | The method is not allowed. |
-| ?? | 1004 | The request was unsuccessful because the record already exists. |
+| Bad Request | 1004 | The request was unsuccessful because the record already exists. |
 | Bad Request | 2000 | Something was wrong with the request (rare). |
 | Dryrun | 3000 | The dryrun was successful. |
 

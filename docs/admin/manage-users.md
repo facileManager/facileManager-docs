@@ -1,9 +1,8 @@
-## Users & Groups
 facileManager incorporates the use of multiple user accounts with granular permissions. This way you can limit access to your environment.
 
 You can add, modify, and delete user accounts at **_Admin → Users & Groups_**.
 
-### Local Options
+## Local Options
 User accounts can be local or from LDAP. For local users, there are some options you can select:
 
 `Force Password Change at Next Login`
@@ -12,7 +11,7 @@ User accounts can be local or from LDAP. For local users, there are some options
 `Template User`
 >Tick this box if this user should be a template user only. These users cannot be enabled and cannot login to facileManager. Any user account of this type will be depicted with a  next to the user name.
 
-### Permissions
+## Permissions
 For all users (and groups), each permission checkbox will grant or deny access to certain functionalities within facileManager.
 
 `Super Admin`

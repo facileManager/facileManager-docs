@@ -1,9 +1,11 @@
-## General Settings
+facileManager has its core settings which can be adjusted and several modules have additional settings specific to the application.
+
+## General
 There are several settings available to set at **_Settings → General_**.
 
 The _Manage Settings_ or _Super Admin_ permission is required to change settings.
 
-#### Authentication
+### Authentication
 There are three types of authentication supported by facileManager:
 
 `None`
@@ -21,28 +23,28 @@ You can reset the authentication method by setting the following in config.inc.p
 define('FM_NO_AUTH', true);
 ```
 
-#### Login Message
+### Login Message
 Define a message to be displayed at login (such as a terms and conditions) and optionally require users to acknowledge the message for authenication to succeed.
 
-#### Client Registration
+### Client Registration
 You can choose to allow clients to automatically register in the database or not during installation.
 
-#### API Support
+### API Support
 By enabling API support, users are able to create keypairs to authenticate with through the client scripts. This opens up the ability to make a limited selection of module changes without using the web interface.
 
-#### SSL
+### SSL
 You can choose to have facileManager enforce the use of SSL when a user tries to access the web app.
 
-#### Mailing
+### Mailing
 There are a few things facileManager and its modules may need to send an e-mail about (such as password reset links). These settings allow you to configure the mailing settings to use for your environment and enable/disable mailing altogether.
 
-#### Proxy Server
+### Proxy Server
 Set the appropriate configuration if facileManager is behind a proxy server for Internet access.
 
-#### Date and Time
+### Date and Time
 Set your preferred timezone, date format, and time format for facileManager to use throughout all aspects of the app. What you select is how all dates and times will be display including any client configuration files.
 
-#### Logging Method
+### Logging Method
 There are three logging methods supported by facileManager:
 
 `Built-in`
@@ -54,23 +56,43 @@ There are three logging methods supported by facileManager:
 `Built-in + syslog`
 >Events will be logged to facileManager and syslog.
 
-#### Show Errors
+### Show Errors
 Choose whether you want facileManager errors to be displayed as they occur or not. This can be useful if you are having trouble adding or editing objects.
 
-#### Temporary Directory
+### Temporary Directory
 Periodically facileManager and its modules may need to create temporary files or directories on your webserver. Specify the local path for it to use.
 
-#### Software Update
+### Software Update
 Choose whether or not facileManager will automatically check for software updates. If you opt in, then you choose the minimum release types to be notified about and the frequency of checks.
 
-#### SSH Username
+### SSH Username
 When servers are configured to receive updates via SSH, this username will be created (if not already present) on your clients and will be used for the client interaction.
 
-#### SSH Key Pair
+### SSH Key Pair
 In order for client configs to be updated via SSH, facileManager needs a 2048-bit passwordless key pair generated. Without this key pair, clients cannot use the SSH update method. Click the 'Generate' button to have facileManager automatically generate the necessary key pair.
 
-#### Image Branding
+### Image Branding
 Add your own image to brand facileManager. This image will be used on the login screen, navigation header, and automated e-mails. You need to manually add it to the document root on the web server and specify the relative URI path.
 
-#### Enable Maintenance Mode
+### Enable Maintenance Mode
 Only users with Super Admin or Module Management privileges are able to authenticate. This is useful during application upgrades.
+
+---
+--8<--
+fmDHCP/src/settings.md
+--8<--
+
+---
+--8<--
+fmDNS/src/settings.md
+--8<--
+
+---
+--8<--
+fmSQLPass/src/settings.md
+--8<--
+
+---
+--8<--
+fmWifi/src/settings.md
+--8<--

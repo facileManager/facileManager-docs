@@ -1,6 +1,4 @@
-## Zones
-
-### Create
+## Create
 Creating forward and reverse zones have many options to consider.
 
 >**Domain Name**
@@ -29,7 +27,7 @@ Creating forward and reverse zones have many options to consider.
 >> The type of zone (`primary`, `secondary`, `stub`, `forward`, `url-redirect`).
 
 >> !!! note
-       `url-redirect` zone types is only a nomenclature in fmDNS. When the zone is defined with this type, a special `URL` resource record is created that fmDNS will automatically build a web redirect to this URL. To use this zone type, _URL RR Web Servers_ must be defined in the [**_Settings_**](../settings.md#define-url-rr-web-servers).
+       `url-redirect` zone types is only a nomenclature in fmDNS. When the zone is defined with this type, a special `URL` resource record is created that fmDNS will automatically build a web redirect to this URL. To use this zone type, _URL RR Web Servers_ must be defined in the [**_Settings_**](../../../admin/settings.md#define-url-rr-web-servers).
 
 >**Clone Of**
 >> **_Optional_**
@@ -61,14 +59,14 @@ Creating forward and reverse zones have many options to consider.
 
 >> Create a zone template from this zone. See [Templates](#templates).
 
-### Options
+## Options
 You can access the individual zone options by clicking on the "Configure Additional Options" link in the zone edit form or by clicking on the zone options icon next to the zone name:
 
 ![Zone Options](../../../images/modules/fmDNS/ZoneOptions.png)
 
 From there you can configure options [supported by the `zone` block](https://bind9.readthedocs.io/en/latest/reference.html#zone-block-definition-and-usage).
 
-### Groups
+## Groups
 Zone groups allow you to group specific zones together for the purpose of restricting user access to specific zones. Instead of listing individual zones a user is restricted access to, you can specify a zone group for easier management.
 
 ![Zone Group](../../../images/modules/fmDNS/ZoneGroup.png)
@@ -77,13 +75,13 @@ In addition, zone groups can be used to filter the zones listing.
 
 ![Zone Group Listing](../../../images/modules/fmDNS/ZoneGroupListing.png)
 
-### Templates
+## Templates
 Zone templates are useful if multiple zones will have the same DNS servers hosting it, a lot of the same records (i.e. NS records, SOA, certain A records, etc.). Templates need to be created before assigned to the zones. When a template is created/modified as a default template, all new zones will automatically have the default template selected.
 
 !!! note
     There can be only one template assigned to a zone.
 
-### Clones
+## Clones
 Zone clones can be used when multiple zones will contain similar records. Simply click on the **_Clone this zone_** icon and create the zone as normal.
 
 ![Clone this zone](../../../images/modules/fmDNS/ZoneClone.png)
@@ -149,7 +147,7 @@ Instead of showing the total number of records in the cloned zone, the zones pag
 !!! note
     Cloned zones will use the SOA from its parent zone except it will have its own `Serial`.
 
-### Reload
+## Reload
 After a zone has been successfully built on the associated DNS servers, they can be reloaded going forward. When one or more resource records have been added or modified, that zone gets flagged for reload. There are four ways to reload a zone:
 
 >**Reload link**

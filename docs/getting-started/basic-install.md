@@ -1,5 +1,4 @@
-## Installation
-### Server Installation
+## Server Installation
 
 1. Move the contents of the server directory to your document root.
    (ie /var/www/html/facileManager/)
@@ -7,7 +6,7 @@
    virtualhost if you set one up (ie http://facileManager.example.com).
 3. Follow the installation wizard to setup your database and admin user.
 
-#### Additional Steps (OS-based)
+### Additional Steps (OS-based)
 
 The following steps need to be performed on vanilla installations of certain 
 operating systems to allow .htaccess files to be used.
@@ -18,7 +17,7 @@ operating systems to allow .htaccess files to be used.
 === "RHEL7/CentOS7"
     Edit /etc/httpd/conf/httpd.conf and change `AllowOverride None` to `AllowOverride All` under `<Directory /var/www/html>` and reload apache.
 
-### Client Installation
+## Client Installation
 
 Install PHP and the required modules.
 === "Debian-based"
@@ -59,21 +58,21 @@ For each module you wish to use, run the following on each client to complete
 sudo php /usr/local/facileManager/<module_name>/client.php install
 ```
 
-#### Prompts
+### Prompts
 The installation process invoked will prompt for three main items:
 
 - facileManager server URL
 - Client serial number
 - Client update method
 
-##### Client serial number
-This number is a unique identifier for each client. In most cases you can accept the default to automatically generate a client serial number.
+#### Client serial number
+This number is a unique identifier for each client. In most cases you can accept the default to automatically generate a unique client serial number.
 
-##### Client update method
+#### Client update method
 How the fM server can communicate with the client to initiate configuration updates can be done via cron, ssh, or http(s).
 
 `cron`
->Specify this option to have the client check periodically for any configuration updates.
+>Specify this option to have the client check periodically (default every 5 minutes) for any configuration updates.
 
 `ssh`
 >Specify this option to allow the fM server to SSH to the client and invoke `client.php` to apply pending changes. This option will allow for immediate changes from fM.
@@ -83,7 +82,7 @@ How the fM server can communicate with the client to initiate configuration upda
 `http(s)`
 >Specify this option to allow the fM server to invoke an HTTP POST to the client and invoke `client.php` to apply pending changes. This option will allow for immediate changes from fM.
 
-#### Installer options
+### Installer options
 The installer does have options that can be passed in the `-o|options` parameter with the client which will skip the prompts.  This can be handy for unattended installations.
 
 !!! note "From the client.php help file"

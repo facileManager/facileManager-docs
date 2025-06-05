@@ -1,20 +1,19 @@
-## Prerequisites
 facileManager (fM) and its modules have two parts -- the server and the client(s). The server is where the web interface runs from and holds all of the information. The client is installed on the systems to interact with the server.
 
 !!! note
     It is **_not_** required to host the MySQL database on the same server as the web interface.
 
-### facileManager server
+## facileManager server
 
-#### Web server
+### Web server
 
 Since the facileManager server interface is web-based, you'll need a working web server of your choice (i.e. Apache, nginx, lighttpd, etc.) with mod_rewrite.so (or equivalent) enabled.
 
-#### PHP
+### PHP
 
 - PHP 7.3.0+ with MySQL support
 
-#### Database
+### Database
 
 facileManager stores all of the information in a database and only supports MySQL-compatible databases.
 
@@ -33,7 +32,7 @@ Required MySQL user privileges on the database include
     FLUSH PRIVILEGES;
     ```
 
-#### Web browser
+### Web browser
 
 To use facileManager you need a web browser with cookies and JavaScript enabled.
 
@@ -42,7 +41,7 @@ To use facileManager you need a web browser with cookies and JavaScript enabled.
 !!! note
     Internet Explorer is not supported - it's too tiresome.
 
-### facileManager client (all modules)
+## facileManager client (all modules)
 
 The facileManager client app is PHP-based (PHP 5.0 or newer).
 
@@ -63,17 +62,17 @@ If you choose to have your client get updates from the server via http(s), you n
         - lighttpd
         - nginx
 
-### Additional Module-Specific Prerequisites
+## Additional Module-Specific Prerequisites
 
 In addition to the fM client prerequisites, some modules have the own unique requirements.
 
-#### fmDHCP
+### fmDHCP
 
 - ISC DHCP
 
 !!! note
     ISC KEA is not yet supported.
 
-#### fmDNS
+### fmDNS
 
 - ISC BIND 9.3 or later

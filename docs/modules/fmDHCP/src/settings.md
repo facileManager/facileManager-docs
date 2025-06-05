@@ -1,5 +1,5 @@
-## fmDHCP Settings
-There are a few settings available to set at **_Settings → fmDHCP_**.
+## fmDHCP
+There are a few settings available at **_Settings → fmDHCP_**.
 
 The fmDHCP _Manage Settings_ or _Super Admin_ permission is required to change settings.
 

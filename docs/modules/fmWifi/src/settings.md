@@ -1,4 +1,5 @@
-There are several settings available to set at **_Settings → fmWifi_**.
+## fmWifi
+There are a few settings available at **_Settings → fmWifi_**.
 
 The fmWifi _Manage Settings_ or _Super Admin_ permission is required to change settings.
 
