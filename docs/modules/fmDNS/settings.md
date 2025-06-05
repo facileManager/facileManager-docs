@@ -1,4 +1,3 @@
-## fmDNS Settings
 There are several settings available to set at **_Settings → fmDNS_**.
 
 The fmDNS _Manage Settings_ or _Super Admin_ permission is required to change settings.

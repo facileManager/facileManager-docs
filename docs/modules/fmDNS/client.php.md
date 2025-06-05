@@ -2,7 +2,7 @@
 client.php.md
 --8<--
 
-### fmDNS Parameters
+## fmDNS Parameters
 fmDNS has additional parameters that can be passed to `client.php` that are specific to this module.
 
 ```

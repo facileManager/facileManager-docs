@@ -1,4 +1,3 @@
-## fmSQLPass Settings
 There are several settings available to set at **_Settings → fmSQLPass_**.
 
 The fmSQLPass _Manage Settings_ or _Super Admin_ permission is required to change settings.

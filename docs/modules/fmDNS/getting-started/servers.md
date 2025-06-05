@@ -2,7 +2,7 @@
 servers.md
 --8<--
 
-### Server Groups
+## Server Groups
 
 If you have more than one server configured, then you can take advantage of the **Server Groups** which allows you to define a relationship with primary and secondary servers.
 

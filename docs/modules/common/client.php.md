@@ -1,4 +1,3 @@
-## `client.php`
 Most modules make use of a client app, but some may not. The modules with a client will have a `client.php` file found in `/usr/local/facileManager/<module_name>/` and it will utilize core functionality found in facileManager-core. Here we will break down the parameters available to all client apps.
 
 You can always invoke the client help file at the CLI:
@@ -6,7 +5,7 @@ You can always invoke the client help file at the CLI:
 php client.php help
 ```
 
-### Core Parameters
+## Core Parameters
 
 ```
 php client.php [options]

@@ -1,17 +1,16 @@
-## Server Interaction
-### Enable Server
-Once you have the [module activated](../../index.md#activate-modules) and the [client app installed](../../../getting-started/basic-install.md#client-installation) on your DNS servers, you will want to review the DNS server's configuration to make sure the installer grabbed the correct information.
+## Enable Server
+Once you have the [module activated](../../index.md#activate-modules) and the [client app installed](../../../getting-started/basic-install.md#client-installation) (if applicable) on your servers, you will want to review the configuration to make sure the installer grabbed the correct information.
 
 Go to **_Config → Servers_** and review the servers.  Once everything is correct, you can enable the server by clicking on the slider in the **_Actions_** column of the server listing.
 
 ![Define Server Group](../../../images/modules/common/ServerEnable.png)
 
-### Preview Configuration
+## Preview Configuration
 The configuration for each server can be previewed by going to **_Config → Servers_** and click on the magnifying glass in the **_Actions_** column of the server to preview.
 
 ![Define Server Group](../../../images/modules/common/ServerPreviewConfig.png)
 
-### Build Configuration
+## Build Configuration
 Any time a server's configuration needs to be built, the background will turn blue to signify the server needs a configuration built.
 
 ![Server Flagged for Build Config](../../../images/modules/common/Servers.png)
