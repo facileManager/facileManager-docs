@@ -74,6 +74,7 @@ nav:
     - 'fmWifi':
       - 'Getting Started' : 
         - 'Server Interaction' : modules/fmWifi/getting-started/servers.md
+        - 'WLAN Management' : modules/fmWifi/getting-started/wlans.md
       - 'Settings' : modules/fmWifi/settings.md
       - 'client.php' : modules/fmWifi/client.php.md
   - 'fM API':
