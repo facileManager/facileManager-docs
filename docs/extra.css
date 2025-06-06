@@ -1,16 +1,14 @@
-:root {
-    --md-default-fg-color: #000000de;
-    --md-default-fg-color--light: #0000008a;
-    --md-default-fg-color--lightest: #00000012;
-    /* --md-indicator-x: 123px; */
-    /* --md-indicator-width: 139px; */
-}
-
+:root,
 :root>* {
+    --md-default-fg-color: #3b4b58;
+    --md-default-fg-color--light: #3b4b58;
+    --md-default-fg-color--lightest: #00000012;
+
     --md-primary-fg-color: #3b4b58;
     --md-primary-fg-color--light: #3b4b58;
     --md-primary-fg-color--dark: #90030C;
     --md-typeset-a-color: #3b8dbc;
+    --md-accent-fg-color: var(--md-typeset-a-color);
 }
 
 [dir="ltr"] .md-typeset blockquote {
