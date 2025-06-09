@@ -35,6 +35,7 @@ Zones can be saved as a template and applied to an unlimited number of zones. Th
 
 Zone templates can only be deleted when there are no zones associated with them. In addition, clones of a zone based on a template cannot be shortened to a DNAME RR.
 
+### Create
 New zone templates can be created in two methods.
 
 #### Method 1
