@@ -109,3 +109,6 @@ Sometimes it may be necessary to disable a feature (or functional check) based o
     define('FM_NO_REWRITE_TEST', true);
     ```
 
+--8<--
+footer.md
+--8<--

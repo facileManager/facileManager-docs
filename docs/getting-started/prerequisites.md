@@ -76,3 +76,7 @@ In addition to the fM client prerequisites, some modules have the own unique req
 ### fmDNS
 
 - ISC BIND 9.3 or later
+
+--8<--
+footer.md
+--8<--

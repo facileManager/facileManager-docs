@@ -69,3 +69,7 @@ If you ever want to uninstall a module, you first need to deactivate it and then
 
 !!! warning
     This will delete all associated records and tables from the database, but will leave the files intact on the filesystem.
+
+--8<--
+footer.md
+--8<--

@@ -38,3 +38,7 @@ zone "test-domain.com" {
 
 !!! note
     You can also just define groups consisting of only primary servers to keep zones configured only on certain primary servers.
+
+--8<--
+footer.md
+--8<--

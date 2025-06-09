@@ -96,3 +96,7 @@ fmSQLPass/src/settings.md
 --8<--
 fmWifi/src/settings.md
 --8<--
+
+--8<--
+footer.md
+--8<--

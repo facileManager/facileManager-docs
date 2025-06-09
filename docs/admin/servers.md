@@ -38,3 +38,7 @@ When you are ready to build the configuration and deploy it, there are three way
        This will process all available updates for all servers and zones.
 
 _The **'Build Server Configs'** or **'Super Admin'** permission is required to build the DNS server configurations._
+
+--8<--
+footer.md
+--8<--

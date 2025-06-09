@@ -45,3 +45,7 @@ You can update the clients through the UI (**_Config → Servers_**)
 >`sudo mv facileManager/client/facileManager /usr/local/`
 3. Restore your backup of config.inc.php to /usr/local/facileManager.
 >`sudo mv config.inc.php /usr/local/facileManager`
+
+--8<--
+footer.md
+--8<--

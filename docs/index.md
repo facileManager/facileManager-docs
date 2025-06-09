@@ -1,4 +1,4 @@
-![facilemanager](https://raw.githubusercontent.com/WillyXJ/facileManager/refs/heads/master/server/fm-modules/facileManager/images/fm.png)
+![facilemanager](https://raw.githubusercontent.com/facileManager/facileManager/refs/heads/master/server/fm-modules/facileManager/images/fm.png)
 
 Coded with the sysadmin in mind.
 
@@ -31,7 +31,7 @@ We welcome financial donations using the link below to help offset a portion of 
 Contributing financially is not the only way to support the project -- there are other ways you can help support us:
 
 - **Spread the word**: Tell others about our software and how you have benefited from it
-- **Test, test, test**: One of the most important things we want to release is bug-free software. Your help can really benefit us by providing feedback on our pre-releases (and even our releases). Just download, test, and [provide your feedback](https://github.com/WillyXJ/facileManager/issues) to us. Choose the software tree you'd like to download and test at a minimum and facileManager will notify you when new versions are available for testing and use.
+- **Test, test, test**: One of the most important things we want to release is bug-free software. Your help can really benefit us by providing feedback on our pre-releases (and even our releases). Just download, test, and [provide your feedback](https://github.com/facileManager/facileManager/issues) to us. Choose the software tree you'd like to download and test at a minimum and facileManager will notify you when new versions are available for testing and use.
 
 ![Software Tree Selection](images/SoftwareTree.png)
 
@@ -39,4 +39,8 @@ Contributing financially is not the only way to support the project -- there are
 
 facileManager and its modules would not be what it is today with the many bugs, features, and pull requests that have been submitted.
 
-No contribution is too great or too small for us to review. Please [add your submission](https://github.com/WillyXJ/facileManager/issues), but please do fill out our template as it helps us to quickly understand your idea or reproduce the bug.
+No contribution is too great or too small for us to review. Please [add your submission](https://github.com/facileManager/facileManager/issues), but please do fill out our template as it helps us to quickly understand your idea or reproduce the bug.
+
+--8<--
+footer.md
+--8<--

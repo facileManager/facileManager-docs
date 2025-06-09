@@ -192,3 +192,7 @@ _The **'Reload Zone'** or **'Super Admin'** permission is required for reloading
 ## Import
 
 You can import BIND-compatible zone dump files instead of adding zones and records individually. Go to **_Admin → Tools_** and use the Import Zone Files utility. Select your dump file and click **'Import Zones'** which will import any views, zones, and records listed in the file.
+
+--8<--
+footer.md
+--8<--

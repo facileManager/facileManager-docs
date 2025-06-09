@@ -36,3 +36,7 @@ User groups can also be created to easily provide the same level of access to mu
 The _User Management_ or _Super Admin_ permission is required for these actions.
 
 When API Support is enabled at **_Settings → General_**, each user may create an API keypair by editing their user profile. Privileged users will be able change the status of any keypair through **_Admin → Users & Groups_**. This keypair allows the user to authenticate via the API through the client scripts.
+
+--8<--
+footer.md
+--8<--

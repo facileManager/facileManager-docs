@@ -155,3 +155,7 @@ fmDNS/src/client.php.md
 --8<--
 fmWifi/src/client.php.md
 --8<--
+
+--8<--
+footer.md
+--8<--

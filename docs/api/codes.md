@@ -28,3 +28,7 @@ The following table lists additional return codes that are related to the fmDNS 
 | Forbidden | 1001 | The user is not privileged to access this zone. |
 | Forbidden | 1002 | The user is not privileged to manage records this type of record. |
 | Forbidden | 1003 | The user is not privileged to reload zones. |
+
+--8<--
+footer.md
+--8<--
