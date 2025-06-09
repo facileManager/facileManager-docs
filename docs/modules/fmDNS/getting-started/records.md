@@ -50,3 +50,7 @@ When viewing the records of a cloned zone, the parent records will not be editab
 
 ## Import
 BIND-compatible zone files can be imported instead of adding records individually. Go to **_Admin → Tools_** and use the Import Zone Files utility. After selecting the file and zone to import to, you have one final chance to review what gets imported before the records are actually imported.
+
+--8<--
+footer.md
+--8<--

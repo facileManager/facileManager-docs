@@ -31,3 +31,7 @@ Once the API is enabled, [create the key pairs](./auth.md).
 ### Examples
 !!! warning "Documentation Missing"
     To be written.
+
+--8<--
+footer.md
+--8<--

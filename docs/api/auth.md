@@ -38,3 +38,6 @@ Alternatively, you may add the `APIKEY` and `APISECRET` variables to another fil
 !!! warning "Documentation Missing"
     To be written.
 
+--8<--
+footer.md
+--8<--

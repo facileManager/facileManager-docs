@@ -30,3 +30,7 @@ Access Control Lists are defined at WLAN → ACLs to define which MAC addresses 
 When defining an ACL, specify the WLANs it applies to, the client MAC address, and the action.
 
 _The 'Manage WLAN Users' or 'Super Admin' permission is required to manage ACLs._
+
+--8<--
+footer.md
+--8<--

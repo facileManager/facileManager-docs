@@ -3,3 +3,7 @@ If you have more than one server configured, then you can take advantage of the 
 ![Define Server Group](../../../images/modules/fmWifi/ServerGroup.png)
 
 Once you have the group defined, you can specify it in when configuring a WLAN and configuration options.
+
+--8<--
+footer.md
+--8<--

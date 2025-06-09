@@ -98,3 +98,7 @@ The installer does have options that can be passed in the `-o|options` parameter
                             install -o FMHOST=https://example.com/fm/,method=cron
                             install options FMHOST=fm.example.com,SERIALNO=0,method=ssh
     ```
+
+--8<--
+footer.md
+--8<--

@@ -9,3 +9,6 @@ If you choose to use the API from a system that is not a module client, you stil
 !!! warning "Documentation Missing"
     To be written.
 
+--8<--
+footer.md
+--8<--

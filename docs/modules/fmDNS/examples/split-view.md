@@ -120,3 +120,7 @@ There are now two zones with the same name in different views and they are indep
 ![Zone listing](../../../images/modules/fmDNS/examples/split-view/ZoneListing.png)
 
 Create the SOA, NS, and any other resource records for each zone.
+
+--8<--
+footer.md
+--8<--

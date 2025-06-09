@@ -54,3 +54,7 @@ When a zone template is set to be the _Default Template_, it will automatically 
 The zone template with a star signifies it's the default template.
 
 ![Zone Default Template](../../../images/modules/fmDNS/advanced/templates/ZoneDefaultTemplateStar.png)
+
+--8<--
+footer.md
+--8<--
