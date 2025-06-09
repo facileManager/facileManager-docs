@@ -1,10 +1,10 @@
 ## Create
-Creating forward and reverse zones have many options to consider.
+Zones (aka domains) can be managed from the **_Zones_** menu item. From there you can add, edit, delete, and reload zones depending on your user permissions. Creating forward and reverse zones have many options to consider.
 
 >**Domain Name**
 >> **_Required_**
 
->> A valid RFC-compliant zone name. It does not need to be compliant if it's going to be a template.
+>> A valid RFC-compliant zone name. It does not need to be compliant if it's going to be a template. Reverse zones can be entered by either their subnet value (192.168.1) or by their arpa value (1.168.192.in-addr.arpa). You can also delegate reverse zones by specifying the classless IP range in the zone name (1-128.168.192.in-addr.arpa).
 
 >**Template**
 >> **_Optional_**
@@ -49,15 +49,32 @@ Creating forward and reverse zones have many options to consider.
 
 >> Choose a TSIG key for transfering this zone if it should differ from the View.
 
+>**SOA**
+>> Default: `Custom` or the default SOA template
+
+>> Choose which SOA template to associate with the zone or select 'Custom' to manually enter a new SOA.
+
 >**Comment**
 >> **_Optional_**
 
 >> Make notes about the zone.
 
+>**Support Dynamic Updates**
+>> **_Optional_**
+
+>> This option allows zone record changes to be made on the DNS server itself (such as through nsupdate). When enabled, fmDNS will compare the zone file from the DNS server with that in the database and make any necessary changes. This option will increase processing time while reloading zones.
+
+>**Enable DNSSEC**
+>> **_Optional_**
+
+>> This option enables zones to support DNSSEC signing. You must create the KSK and ZSK before zones will be signed (offline and inline signing are supported). During a configuration build or zone reload, the ZSK and KSK files will stored on the name servers in the directory defined by the most specific key-directory option defined (global, view, zone, server-override, etc.). This option will increase processing time while reloading zones.
+
 >**Create Template**
 >> **_Optional_**
 
 >> Create a zone template from this zone. See [Templates](#templates).
+
+_The **'Zone Management'** or **'Super Admin'** permission is required to add, edit, and delete zones and templates._
 
 ## Options
 You can access the individual zone options by clicking on the "Configure Additional Options" link in the zone edit form or by clicking on the zone options icon next to the zone name:
@@ -76,21 +93,18 @@ In addition, zone groups can be used to filter the zones listing.
 ![Zone Group Listing](../../../images/modules/fmDNS/ZoneGroupListing.png)
 
 ## Templates
-Zone templates are useful if multiple zones will have the same DNS servers hosting it, a lot of the same records (i.e. NS records, SOA, certain A records, etc.). Templates need to be created before assigned to the zones. When a template is created/modified as a default template, all new zones will automatically have the default template selected.
-
-!!! note
-    There can be only one template assigned to a zone.
+Zones can be saved as a template and applied to an unlimited number of zones. See [Templates](../advanced/templates.md#zone) for more information.
 
 ## Clones
-Zone clones can be used when multiple zones will contain similar records. Simply click on the **_Clone this zone_** icon and create the zone as normal.
+You can define a zone as a clone of another previously defined primary zone. The cloned zone will contain all of the same records present in the parent zone. This is useful if you have multiple zones with identical records as you won't have to repeat the record definitions. Clones can also be handy if you want some records to resolve differently in a split-view scenario.
+
+Simply click on the **_Clone this zone_** icon and create the zone as normal.
 
 ![Clone this zone](../../../images/modules/fmDNS/ZoneClone.png)
 
-This can be handy if you want some records to resolve differently in a split-view scenario.  It's also handy when you have multiple zones with the same resource records.
+When you edit the records for a cloned zone, you have the **_Skip Import_** option on each record that comes from the parent.  When skipped, the particular record will not be loaded in the cloned zone on the DNS servers. You can also define new records inside cloned zones for those that are slightly different than the parent.
 
-When you edit the records for a cloned zone, you have the **_Skip Import_** option on each record that comes from the parent.  When skipped, the particular record will not be loaded in the cloned zone on the DNS servers.
-
-![Clone this zone](../../../images/modules/fmDNS/ZoneCloneRecords.png)
+![Cloned zone records](../../../images/modules/fmDNS/ZoneCloneRecords.png)
 
 ```
 ===========================================================================
@@ -172,3 +186,9 @@ After a zone has been successfully built on the associated DNS servers, they can
 
 >> !!! warning
        This will process all available updates for all servers and zones.
+
+_The **'Reload Zone'** or **'Super Admin'** permission is required for reloading zones._
+
+## Import
+
+You can import BIND-compatible zone dump files instead of adding zones and records individually. Go to **_Admin → Tools_** and use the Import Zone Files utility. Select your dump file and click **'Import Zones'** which will import any views, zones, and records listed in the file.

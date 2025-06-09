@@ -63,6 +63,7 @@ nav:
       - 'Advanced' : 
         - 'Templates' : modules/fmDNS/advanced/templates.md
         - 'URL RR' : modules/fmDNS/advanced/url.md
+        - 'Variables' : modules/fmDNS/advanced/variables.md
       - 'Examples' : 
         - 'Split-View' : modules/fmDNS/examples/split-view.md
     - 'fmFirewall':
