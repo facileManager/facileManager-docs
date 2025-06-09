@@ -70,7 +70,7 @@ Define the number of days the DNSSEC signatures should be valid for (each zone c
 ### Define URL RR Web Servers
 >Default: `none`
 
-This feature will enable the fmDNS URL resource record which allows DNS records to redirect the user to a URL. For example:
+This feature will enable the fmDNS [URL resource record](../modules/fmDNS/advanced/url.md) which allows DNS records to redirect the user to a URL. For example:
 
 `foo.bar.com  IN  URL  http://www.foobar.com/some/landing/page.html`
 
