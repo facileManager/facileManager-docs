@@ -79,7 +79,8 @@ nav:
     - 'Authentication': api/auth.md
     - 'Return Codes': api/codes.md
     - 'client.php' : api/client.php.md
-  # - 'FAQ': main/faq.md
+  - 'FAQ': faq.md
+  - 'Reporting Issues': issues.md
 
 markdown_extensions:
   # Code highlighting in ``` ``` blocks, superseeds codehilite
