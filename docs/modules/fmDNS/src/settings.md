@@ -1,7 +1,7 @@
 ## fmDNS
 There are several settings available at **_Settings → fmDNS_**.
 
-The fmDNS _Manage Settings_ or _Super Admin_ permission is required to change settings.
+_The fmDNS **Manage Settings** or **Super Admin** permission is required to change settings.
 
 ### Enable named Checks
 >Default: `disabled`

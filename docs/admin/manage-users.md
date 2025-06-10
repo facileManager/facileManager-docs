@@ -33,7 +33,7 @@ New user accounts can be created quickly from a template by duplicating the temp
 
 User groups can also be created to easily provide the same level of access to multiple user accounts.
 
-The _User Management_ or _Super Admin_ permission is required for these actions.
+_The **User Management** or **Super Admin** permission is required for these actions._
 
 When API Support is enabled at **_Settings → General_**, each user may create an API keypair by editing their user profile. Privileged users will be able change the status of any keypair through **_Admin → Users & Groups_**. This keypair allows the user to authenticate via the API through the client scripts.
 

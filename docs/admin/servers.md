@@ -5,7 +5,7 @@ Go to **_Config → Servers_** and review the servers.  Once everything is corre
 
 ![Enable Server](../images/modules/common/ServerEnable.png)
 
-_The **'Server Management'** or **'Super Admin'** permission is required to add, edit, and delete servers._
+_The **Server Management** or **Super Admin** permission is required to add, edit, and delete servers._
 
 ## Preview Configuration
 The configuration for each server can be previewed by going to **_Config → Servers_** and click on the magnifying glass in the **_Actions_** column of the server to preview.
@@ -37,7 +37,7 @@ When you are ready to build the configuration and deploy it, there are three way
 >> !!! warning
        This will process all available updates for all servers and zones.
 
-_The **'Build Server Configs'** or **'Super Admin'** permission is required to build the DNS server configurations._
+_The **Build Server Configs** or **Super Admin** permission is required to build the server configurations._
 
 --8<--
 footer.md
