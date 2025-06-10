@@ -74,7 +74,7 @@ Zones (aka domains) can be managed from the **_Zones_** menu item. From there yo
 
 >> Create a zone template from this zone. See [Templates](#templates).
 
-_The **'Zone Management'** or **'Super Admin'** permission is required to add, edit, and delete zones and templates._
+_The **Zone Management** or **Super Admin** permission is required to add, edit, and delete zones and templates._
 
 ## Options
 You can access the individual zone options by clicking on the "Configure Additional Options" link in the zone edit form or by clicking on the zone options icon next to the zone name:
@@ -187,7 +187,7 @@ After a zone has been successfully built on the associated DNS servers, they can
 >> !!! warning
        This will process all available updates for all servers and zones.
 
-_The **'Reload Zone'** or **'Super Admin'** permission is required for reloading zones._
+_The **Reload Zone** or **Super Admin** permission is required for reloading zones._
 
 ## Import
 

@@ -1,7 +1,7 @@
 ## fmWifi
 There are a few settings available at **_Settings → fmWifi_**.
 
-The fmWifi _Manage Settings_ or _Super Admin_ permission is required to change settings.
+_The fmWifi **Manage Settings** or **Super Admin** permission is required to change settings._
 
 ### Include WLAN PSK
 >Default: `disabled`

@@ -3,7 +3,7 @@ Resource Records are managed by clicking on the zone name from the zone listing.
 !!! note
     You can add IPv4 A type and IPv6 AAAA type records under the same page. Select A or AAAA from the upper-right and add your IPv4 and IPv6 records and fmDNS will auto-detect their type.
 
-_The **'Record Management'** or **'Super Admin'** permission is required to add, edit, and delete records._
+_The **Record Management** or **Super Admin** permission is required to add, edit, and delete records._
 
 ## Form Validation
 Whenever you add or edit records, the record(s) will need to be validated before they can be saved. Form validation attempts to ensure the data entered is RFC-compliant and flags any field that has bad data. You can either validate each entry individually by clicking the green checkmark at the end of the record row or use the **_Validate All_** button to check all new and modified entries.

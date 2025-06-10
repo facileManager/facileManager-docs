@@ -1,7 +1,7 @@
 ## fmSQLPass
 There are a few settings available at **_Settings → fmSQLPass_**.
 
-The fmSQLPass _Manage Settings_ or _Super Admin_ permission is required to change settings.
+_The fmSQLPass **Manage Settings** or **Super Admin** permission is required to change settings._
 
 ### Minimum Password Strength
 >Default: `Strong`

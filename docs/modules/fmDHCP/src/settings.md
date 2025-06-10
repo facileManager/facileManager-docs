@@ -1,7 +1,7 @@
 ## fmDHCP
 There are a few settings available at **_Settings → fmDHCP_**.
 
-The fmDHCP _Manage Settings_ or _Super Admin_ permission is required to change settings.
+_The fmDHCP **Manage Settings** or **Super Admin** permission is required to change settings._
 
 ### Enable dhcpd Checks
 >Default: `disabled`

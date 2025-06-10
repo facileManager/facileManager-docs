@@ -3,7 +3,7 @@ Templates can be used to limit duplicate work.
 ## SOA
 Instead of create the same SOA for multiple zones, you can create a SOA template which can then be applied to an unlimited number of zones. Go to **_Templates → SOA_** to create new and view existing templates. SOA templates can only be deleted when there are no zones associated with them.
 
-_The **'Zone Management'** or **'Super Admin'** permission is required to add, edit, and delete SOA templates._
+_The **Zone Management** or **'uper Admin** permission is required to add, edit, and delete SOA templates._
 
 ### Create
 New SOA templates can be created in two methods.

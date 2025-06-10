@@ -3,7 +3,7 @@ facileManager has its core settings which can be adjusted and several modules ha
 ## General
 There are several settings available to set at **_Settings → General_**.
 
-The _Manage Settings_ or _Super Admin_ permission is required to change settings.
+_The **Manage Settings** or **Super Admin** permission is required to change settings._
 
 ### Authentication
 There are three types of authentication supported by facileManager:
