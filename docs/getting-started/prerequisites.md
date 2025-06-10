@@ -1,4 +1,4 @@
-facileManager (fM) and its modules have two parts -- the server and the client(s). The server is where the web interface runs from and holds all of the information. The client is installed on the systems to interact with the server.
+facileManager (fM) and its modules have two parts -- the server and the client(s). The server is where the web interface runs from and holds all of the information. The client (or agent) is installed on the systems to interact with the server.
 
 !!! note
     It is **_not_** required to host the MySQL database on the same server as the web interface.
@@ -64,7 +64,7 @@ If you choose to have your client get updates from the server via http(s), you n
 
 ## Additional Module-Specific Prerequisites
 
-In addition to the fM client prerequisites, some modules have the own unique requirements.
+In addition to the fM client prerequisites, some modules have their own unique requirements.
 
 ### fmDHCP
 
