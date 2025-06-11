@@ -1666,14 +1666,14 @@
 <p>Whenever you add or edit records, the record(s) will need to be validated before they can be saved. Form validation attempts to ensure the data entered is RFC-compliant and flags any field that has bad data. You can either validate each entry individually by clicking the green checkmark at the end of the record row or use the <strong><em>Validate All</em></strong> button to check all new and modified entries.</p>
 <p><img alt="Failed record validation" src="../../../../images/modules/fmDNS/RecordValidationFail.png" /></p>
 <h2 id="linked-ptr-records">Linked PTR Records<a class="headerlink" href="#linked-ptr-records" title="Permanent link">&para;</a></h2>
-<p><code>A</code> records provide the option to automatically create a <code>PTR</code> record with the <strong>Create PTR</strong> checkbox. However, the reverse zone must first exist in order for <code>PTR</code> records to automatically be created. You can enable the automatic reverse zone creation in the <strong><em>Settings</em></strong>. In this case, the reverse zone will inherit the same SOA as the forward zone. Once an <code>A</code> record is created with a <code>PTR</code>, the record will show it has a linked <code>PTR</code> which can later be updated if the record changes.</p>
+<p><code>A</code> records provide the option to automatically create a <code>PTR</code> record with the <strong>Create PTR</strong> checkbox. However, the reverse zone must first exist in order for <code>PTR</code> records to automatically be created. You can enable the automatic reverse zone creation in the <a href="../../../../admin/settings/#create-reverse-zones-automatically"><strong><em>Settings</em></strong></a>. In this case, the reverse zone will inherit the same SOA as the forward zone. Once an <code>A</code> record is created with a <code>PTR</code>, the record will show it has a linked <code>PTR</code> which can later be updated if the record changes.</p>
 <p><img alt="Linked PTR record" src="../../../../images/modules/fmDNS/RecordLinkedPTR.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If the corresponding reverse zone does not already exist, it can be <a href="../../../../admin/settings/#create-reverse-zones-automatically">automatically created</a> during the record validation process.</p>
 </div>
 <h2 id="append-domain">Append Domain<a class="headerlink" href="#append-domain" title="Permanent link">&para;</a></h2>
-<p>When adding certain records (such as CNAME, MX, SRV, SOA, NS, etc.), you have the option append the domain to the record. This means fmDNS will automatically add the domain to the record so you don't have to give the fully qualified domain name in the record value. fmDNS will attempt to auto-detect whether or not the domain should be appended if no choice is made at the time of record creation.</p>
+<p>When adding certain records (such as <code>CNAME</code>, <code>MX</code>, <code>SRV</code>, <code>SOA</code>, <code>NS</code>, etc.), you have the option append the domain to the record. This means fmDNS will automatically add the domain to the record so you don't have to give the fully qualified domain name in the record value. fmDNS will attempt to auto-detect whether or not the domain should be appended if no choice is made at the time of record creation.</p>
 <p><img alt="Automatically append domain during input" src="../../../../images/modules/fmDNS/RecordAppendInput.png" /></p>
 <p>This is helpful if you can't remember if a value needs a trailing period (.) or not.</p>
 <p><img alt="Automatically append domain validated" src="../../../../images/modules/fmDNS/RecordAppendValidated.png" /></p>
@@ -1692,6 +1692,12 @@ test-append.test-domain.com.      IN   CNAME   web.test-domain.com.
 <p><img alt="Cloned zone records" src="../../../../images/modules/fmDNS/ZoneCloneRecords.png" /></p>
 <h2 id="import">Import<a class="headerlink" href="#import" title="Permanent link">&para;</a></h2>
 <p>BIND-compatible zone files can be imported instead of adding records individually. Go to <strong><em>Admin → Tools</em></strong> and use the Import Zone Files utility. After selecting the file and zone to import to, you have one final chance to review what gets imported before the records are actually imported.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>You can generate a zone file to import using <code>rndc</code>:
+<div class="highlight"><pre><span></span><code>rndc dumpdb -zones /path/to/dump/directory/named_dump.db
+</code></pre></div></p>
+</div>
 <h2 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h2>
 <p>Questions or comments about this topic? Join the <a href="https://github.com/facileManager/facileManager/discussions/">discussion here</a>.</p>
 
@@ -1714,7 +1720,7 @@ test-append.test-domain.com.      IN   CNAME   web.test-domain.com.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 10, 2025 13:35:20 UTC">June 10, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 11, 2025 21:04:36 UTC">June 11, 2025</span>
   </span>
 
     
@@ -1733,14 +1739,19 @@ test-append.test-domain.com.      IN   CNAME   web.test-domain.com.
     
     <nav>
       
-        <a href="https://github.com/JonLaBass" class="md-author" title="@JonLaBass">
-          
-          <img src="https://avatars.githubusercontent.com/u/90723283?v=4&size=72" alt="JonLaBass">
-        </a>
-      
         <a href="https://github.com/WillyXJ" class="md-author" title="@WillyXJ">
           
           <img src="https://avatars.githubusercontent.com/u/1309591?v=4&size=72" alt="WillyXJ">
+        </a>
+      
+        <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
+          
+          <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
+        </a>
+      
+        <a href="https://github.com/JonLaBass" class="md-author" title="@JonLaBass">
+          
+          <img src="https://avatars.githubusercontent.com/u/90723283?v=4&size=72" alt="JonLaBass">
         </a>
       
       
