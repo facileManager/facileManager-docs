@@ -45,11 +45,11 @@ nav:
     - 'Installation': getting-started/basic-install.md
     - 'Post-Install': getting-started/post-install.md
     - 'Updating': getting-started/update.md
+    - 'config.inc.php': admin/config.inc.php.md
   - 'Administration':
+    - 'Module Management' : admin/manage-modules.md
     - 'Settings': admin/settings.md
     - 'Users & Groups': admin/manage-users.md
-    - 'config.inc.php': admin/config.inc.php.md
-    - 'Module Management' : admin/manage-modules.md
     - 'Server Interaction' : admin/servers.md
     - 'client.php' : admin/client.php.md
   - 'Modules':
@@ -149,9 +149,9 @@ markdown_extensions:
 
 plugins:
   - search
-  - git-revision-date-localized
-  - git-committers:
-      repository: facileManager/facileManager-docs
+  # - git-revision-date-localized
+  # - git-committers:
+      # repository: facileManager/facileManager-docs
 
 extra_css:
   - extra.css
