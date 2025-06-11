@@ -11,7 +11,7 @@ Whenever you add or edit records, the record(s) will need to be validated before
 ![Failed record validation](../../../images/modules/fmDNS/RecordValidationFail.png)
 
 ## Linked PTR Records
-`A` records provide the option to automatically create a `PTR` record with the **Create PTR** checkbox. However, the reverse zone must first exist in order for `PTR` records to automatically be created. You can enable the automatic reverse zone creation in the **_Settings_**. In this case, the reverse zone will inherit the same SOA as the forward zone. Once an `A` record is created with a `PTR`, the record will show it has a linked `PTR` which can later be updated if the record changes.
+`A` records provide the option to automatically create a `PTR` record with the **Create PTR** checkbox. However, the reverse zone must first exist in order for `PTR` records to automatically be created. You can enable the automatic reverse zone creation in the [**_Settings_**](../../../admin/settings.md#create-reverse-zones-automatically). In this case, the reverse zone will inherit the same SOA as the forward zone. Once an `A` record is created with a `PTR`, the record will show it has a linked `PTR` which can later be updated if the record changes.
 
 ![Linked PTR record](../../../images/modules/fmDNS/RecordLinkedPTR.png)
 
@@ -19,7 +19,7 @@ Whenever you add or edit records, the record(s) will need to be validated before
     If the corresponding reverse zone does not already exist, it can be [automatically created](../../../admin/settings.md#create-reverse-zones-automatically) during the record validation process.
 
 ## Append Domain
-When adding certain records (such as CNAME, MX, SRV, SOA, NS, etc.), you have the option append the domain to the record. This means fmDNS will automatically add the domain to the record so you don't have to give the fully qualified domain name in the record value. fmDNS will attempt to auto-detect whether or not the domain should be appended if no choice is made at the time of record creation.
+When adding certain records (such as `CNAME`, `MX`, `SRV`, `SOA`, `NS`, etc.), you have the option append the domain to the record. This means fmDNS will automatically add the domain to the record so you don't have to give the fully qualified domain name in the record value. fmDNS will attempt to auto-detect whether or not the domain should be appended if no choice is made at the time of record creation.
 
 ![Automatically append domain during input](../../../images/modules/fmDNS/RecordAppendInput.png)
 
@@ -50,6 +50,12 @@ When viewing the records of a cloned zone, the parent records will not be editab
 
 ## Import
 BIND-compatible zone files can be imported instead of adding records individually. Go to **_Admin → Tools_** and use the Import Zone Files utility. After selecting the file and zone to import to, you have one final chance to review what gets imported before the records are actually imported.
+
+!!! example
+    You can generate a zone file to import using `rndc`:
+    ```
+    rndc dumpdb -zones /path/to/dump/directory/named_dump.db
+    ```
 
 --8<--
 footer.md
