@@ -162,7 +162,7 @@ Instead of showing the total number of records in the cloned zone, the zones pag
     Cloned zones will use the SOA from its parent zone except it will have its own `Serial`.
 
 ## Reload
-After a zone has been successfully built on the associated DNS servers, they can be reloaded going forward. When one or more resource records have been added or modified, that zone gets flagged for reload. There are four ways to reload a zone:
+After a zone has been successfully [built on the associated DNS servers](../../../admin/servers.md#build-configuration), they can be reloaded going forward. When one or more resource records have been added or modified, that zone gets flagged for reload. There are four ways to reload a zone:
 
 >**Reload link**
 >> Click on the **_reload_** link at the top of the zone's records page.
