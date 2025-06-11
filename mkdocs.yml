@@ -149,9 +149,9 @@ markdown_extensions:
 
 plugins:
   - search
-  # - git-revision-date-localized
-  # - git-committers:
-      # repository: facileManager/facileManager-docs
+  - git-revision-date-localized
+  - git-committers:
+      repository: facileManager/facileManager-docs
 
 extra_css:
   - extra.css
