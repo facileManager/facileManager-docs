@@ -83,7 +83,7 @@ How the fM server can communicate with the client to initiate configuration upda
 >Specify this option to allow the fM server to invoke an HTTP POST to the client and invoke `client.php` to apply pending changes. This option will allow for immediate changes from fM.
 
 ### Installer options
-The installer does have options that can be passed in the `-o|options` parameter with the client which will skip the prompts.  This can be handy for unattended installations.
+The installer does have options that can be passed in the [`-o|options`](../admin/client.php.md#-o-options) parameter with the [client](../admin/client.php.md) which will skip the prompts.  This can be handy for unattended installations.
 
 !!! note "From the client.php help file"
     (invoked with `php /usr/local/facileManager/<module_name>/client.php help`):
