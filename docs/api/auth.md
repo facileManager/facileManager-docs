@@ -35,8 +35,13 @@ define('APISECRET', 'Lyznun1N4gQGILoHqweZLAhGyYrHCQQV7AuUN');
 Alternatively, you may add the `APIKEY` and `APISECRET` variables to another file and reference it in your API calls with `client.php apicreds=/path/to/file ...`.
 
 #### Other Client
-!!! warning "Documentation Missing"
-    To be written.
+You must pass these three keys in the headers of your request for authentication.
+
+| Key | Description | Example Value |
+|-----|-------------|---------|
+| AUTHKEY | Account | `default` |
+| X-API-KEY | API key for the user | `UH27EOM9EUELLUKRX0KDZEAWGN` |
+| X-API-SECRET | API secret for the user | `Lyznun1N4gQGILoHqweZLAhGyYrHCQQV7AuUN` |
 
 --8<--
 footer.md
