@@ -1482,6 +1482,78 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uris" class="md-nav__link">
+    <span class="md-ellipsis">
+      URIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fmdns" class="md-nav__link">
+    <span class="md-ellipsis">
+      fmDNS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body Keys
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Body Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fmdns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      fmDNS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1668,6 +1740,78 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uris" class="md-nav__link">
+    <span class="md-ellipsis">
+      URIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fmdns" class="md-nav__link">
+    <span class="md-ellipsis">
+      fmDNS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body Keys
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Body Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fmdns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      fmDNS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1733,6 +1877,10 @@
 </thead>
 <tbody>
 <tr>
+<td><code>GET</code></td>
+<td>Get resource information</td>
+</tr>
+<tr>
 <td><code>POST</code></td>
 <td>Create new resources</td>
 </tr>
@@ -1751,6 +1899,139 @@
 <p>REST APIs are part of the facileManager installation and can be used once enabled in <strong><em>Settings → General</em></strong>.</p>
 <p><img alt="Enable API" src="../images/api/EnableAPI.png" /></p>
 <p>Once the API is enabled, <a href="auth/">create the key pairs</a>.</p>
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
+<p>If you don't want to use the <a href="client.php/">client.php</a>, you can use this information to form your REST requests.</p>
+<h4 id="required-headers">Required Headers<a class="headerlink" href="#required-headers" title="Permanent link">&para;</a></h4>
+<p>Pass the <a href="auth/#other-client">required headers for authentication</a>.</p>
+<h4 id="uris">URIs<a class="headerlink" href="#uris" title="Permanent link">&para;</a></h4>
+<p>Below are the available URIs to use with your REST client of choice.</p>
+<h5 id="fmdns">fmDNS<a class="headerlink" href="#fmdns" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>URI</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/api/fmDNS/views/</td>
+<td><code>GET</code></td>
+<td>Retrieves the list of views</td>
+</tr>
+<tr>
+<td>/api/fmDNS/views/<code>id</code>/</td>
+<td><code>GET</code></td>
+<td>Retrieves information for view <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/views/<code>id</code>/zones/</td>
+<td><code>GET</code></td>
+<td>Retrieves the list of zones associated with view <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/</td>
+<td><code>GET</code></td>
+<td>Retrieves the list of zones</td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/</td>
+<td><code>GET</code></td>
+<td>Retrieves information for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/</td>
+<td><code>PATCH</code></td>
+<td>Increments the zone serial number for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/</td>
+<td><code>PATCH</code></td>
+<td>Sets the zone reload flag for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/</td>
+<td><code>GET</code></td>
+<td>Retrieves the records for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/</td>
+<td><code>POST</code></td>
+<td>Adds a new record for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/<code>RR</code>/</td>
+<td><code>GET</code></td>
+<td>Retrieves the <code>RR</code> type records for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/<code>id</code>/</td>
+<td><code>GET</code></td>
+<td>Retrieves the information for record <code>id</code> for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/<code>id</code>/</td>
+<td><code>PATCH</code></td>
+<td>Updates record <code>id</code> for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/<code>id</code>/</td>
+<td><code>DELETE</code></td>
+<td>Deletes record <code>id</code> for zone <code>id</code></td>
+</tr>
+<tr>
+<td>/api/fmDNS/zones/<code>id</code>/records/<code>id</code>/</td>
+<td><code>PATCH</code>/<code>POST</code></td>
+<td>Sets the automatically linked PTR for record <code>id</code> for zone <code>id</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="body-keys">Body Keys<a class="headerlink" href="#body-keys" title="Permanent link">&para;</a></h4>
+<p>Below are the available keys to use in the body of your REST request for <code>POST</code> and <code>PATCH</code> methods.</p>
+<h5 id="fmdns_1">fmDNS<a class="headerlink" href="#fmdns_1" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>record_name</td>
+<td>The record name</td>
+</tr>
+<tr>
+<td>record_ttl</td>
+<td>The record TTL</td>
+</tr>
+<tr>
+<td>record_type</td>
+<td>The record type (<code>A</code>, <code>CNAME</code>, etc.)</td>
+</tr>
+<tr>
+<td>record_value</td>
+<td>The record value</td>
+</tr>
+<tr>
+<td>record_comment</td>
+<td>The record comment</td>
+</tr>
+<tr>
+<td>setPTR</td>
+<td>Whether to set the automatic PTR (<code>yes</code> or <code>no</code>)</td>
+</tr>
+<tr>
+<td>reload</td>
+<td>Whether to reload the zone (<code>yes</code> or <code>no</code>)</td>
+</tr>
+<tr>
+<td>soa-only</td>
+<td>Whether to update the SOA serial number only (<code>yes</code> or <code>no</code>)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h2>
 <p>Questions or comments about this topic? Join the <a href="https://github.com/facileManager/facileManager/discussions/">discussion here</a>.</p>
 
@@ -1773,7 +2054,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 27, 2025 02:05:44 UTC">August 27, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 27, 2025 18:41:01 UTC">August 27, 2025</span>
   </span>
 
     
