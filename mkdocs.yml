@@ -74,11 +74,11 @@ nav:
       - 'Getting Started' : 
         - 'Server Groups' : modules/fmWifi/getting-started/server-groups.md
         - 'WLAN Management' : modules/fmWifi/getting-started/wlans.md
-  # - 'fM API':
-  #   - 'REST API': api/index.md
-  #   - 'Authentication': api/auth.md
-  #   - 'Return Codes': api/codes.md
-  #   - 'client.php' : api/client.php.md
+  - 'fM API':
+    - 'REST API': api/index.md
+    - 'Authentication': api/auth.md
+    - 'Return Codes': api/codes.md
+    - 'client.php' : api/client.php.md
   - 'FAQ': faq.md
   - 'Reporting Issues': issues.md
 

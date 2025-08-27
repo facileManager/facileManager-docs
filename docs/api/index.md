@@ -24,14 +24,6 @@ REST APIs are part of the facileManager installation and can be used once enable
 
 Once the API is enabled, [create the key pairs](./auth.md).
 
-### Usage
-!!! warning "Documentation Missing"
-    To be written.
-
-### Examples
-!!! warning "Documentation Missing"
-    To be written.
-
 --8<--
 footer.md
 --8<--
