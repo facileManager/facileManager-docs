@@ -1855,17 +1855,35 @@
   <h1>Prerequisites</h1>
 
 <p>facileManager (fM) and its modules have two parts -- the server and the client(s). The server is where the web interface runs from and holds all of the information. The client (or agent) is installed on the systems to interact with the server.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It is <strong><em>not</em></strong> required to host the MySQL database on the same server as the web interface.</p>
-</div>
 <h2 id="facilemanager-server">facileManager server<a class="headerlink" href="#facilemanager-server" title="Permanent link">&para;</a></h2>
 <h3 id="web-server">Web server<a class="headerlink" href="#web-server" title="Permanent link">&para;</a></h3>
 <p>Since the facileManager server interface is web-based, you'll need a working web server of your choice (i.e. Apache, nginx, lighttpd, etc.) with mod_rewrite.so (or equivalent) enabled.</p>
+<p>If you use Apache, ensure your virtualhost's document root also has provisions to allow .htaccess files.  For example, if you use <code>DocumentRoot /var/www/html</code> then you'll need the following <code>&lt;Directory&gt;</code> directive:</p>
+<div class="highlight"><pre><span></span><code>DocumentRoot /var/www/html
+
+&lt;Directory /var/www/html&gt;
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+    Order allow,deny
+    allow from all
+&lt;/Directory&gt;
+</code></pre></div>
 <h3 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h3>
 <ul>
-<li>PHP 7.3.0+ with MySQL support</li>
+<li>PHP 7.3.0+ with MySQL and curl support</li>
 </ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Debian-based</label><label for="__tabbed_1_2">RedHat-based</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo apt install php php-mysql php-curl
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>sudo yum install php php-mysql php-curl
+</code></pre></div>
+</div>
+</div>
+</div>
 <h3 id="database">Database<a class="headerlink" href="#database" title="Permanent link">&para;</a></h3>
 <p>facileManager stores all of the information in a database and only supports MySQL-compatible databases.</p>
 <ul>
@@ -1883,12 +1901,16 @@
 <span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
 </code></pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is <strong><em>not</em></strong> required to host the MySQL database on the same server as the web interface.</p>
+</div>
 <h3 id="web-browser">Web browser<a class="headerlink" href="#web-browser" title="Permanent link">&para;</a></h3>
 <p>To use facileManager you need a web browser with cookies and JavaScript enabled.</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark#browser_compatibility">Minimum browser versions</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Internet Explorer is not supported - it's too tiresome.</p>
+<p>Internet Explorer and Edge are not supported - they are too tiresome.</p>
 </div>
 <h2 id="facilemanager-client-all-modules">facileManager client (all modules)<a class="headerlink" href="#facilemanager-client-all-modules" title="Permanent link">&para;</a></h2>
 <p>The facileManager client app is PHP-based (PHP 5.0 or newer).</p>
@@ -1977,7 +1999,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 10, 2025 23:47:46 UTC">June 10, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 29, 2025 19:31:20 UTC">August 29, 2025</span>
   </span>
 
     
