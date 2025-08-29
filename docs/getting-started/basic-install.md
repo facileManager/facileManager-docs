@@ -2,45 +2,37 @@
 
 1. Move the contents of the server directory to your document root.
    (ie /var/www/html/facileManager/)
+   ```
+    wget https://www.facilemanager.com/download/facilemanager-complete-latest.tar.gz
+    tar zxf facilemanager-complete-latest.tar.gz
+    sudo mv facileManager/server /var/www/html/facileManager
+    chown -R www-data /var/www/html/facileManager
+    rm -rf facileManager
+   ```
 2. Point your web browser to http://example.com/facileManager/ or your
    virtualhost if you set one up (ie http://facileManager.example.com).
 3. Follow the installation wizard to setup your database and admin user.
-
-### Additional Steps (OS-based)
-
-The following steps need to be performed on vanilla installations of certain 
-operating systems to allow .htaccess files to be used.
-
-=== "Debian-based"
-    Edit /etc/apache2/sites-enabled/default and change `AllowOverride None` to `AllowOverride All` under `<directory /var/www/>` and reload apache.
-
-=== "RHEL7/CentOS7"
-    Edit /etc/httpd/conf/httpd.conf and change `AllowOverride None` to `AllowOverride All` under `<Directory /var/www/html>` and reload apache.
 
 ## Client Installation
 
 Install PHP and the required modules.
 === "Debian-based"
-
     ```
     sudo apt install php-cli php-curl
     ```
 
 === "RedHat-based"
-
     ```
     sudo yum install php-cli php-curl
     ```
 
 Install optional modules.
 === "Debian-based"
-
     ```
     sudo apt install php-openssl php-zlib
     ```
 
 === "RedHat-based"
-
     ```
     sudo yum install php-openssl php-zlib
     ```

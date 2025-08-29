@@ -1,17 +1,37 @@
 facileManager (fM) and its modules have two parts -- the server and the client(s). The server is where the web interface runs from and holds all of the information. The client (or agent) is installed on the systems to interact with the server.
 
-!!! note
-    It is **_not_** required to host the MySQL database on the same server as the web interface.
-
 ## facileManager server
 
 ### Web server
 
 Since the facileManager server interface is web-based, you'll need a working web server of your choice (i.e. Apache, nginx, lighttpd, etc.) with mod_rewrite.so (or equivalent) enabled.
 
+If you use Apache, ensure your virtualhost's document root also has provisions to allow .htaccess files.  For example, if you use `DocumentRoot /var/www/html` then you'll need the following `<Directory>` directive:
+
+```
+DocumentRoot /var/www/html
+
+<Directory /var/www/html>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride all
+    Order allow,deny
+    allow from all
+</Directory>
+```
+
 ### PHP
 
-- PHP 7.3.0+ with MySQL support
+- PHP 7.3.0+ with MySQL and curl support
+
+=== "Debian-based"
+    ```
+    sudo apt install php php-mysql php-curl
+    ```
+
+=== "RedHat-based"
+    ```
+    sudo yum install php php-mysql php-curl
+    ```
 
 ### Database
 
@@ -32,6 +52,9 @@ Required MySQL user privileges on the database include
     FLUSH PRIVILEGES;
     ```
 
+!!! note
+    It is **_not_** required to host the MySQL database on the same server as the web interface.
+
 ### Web browser
 
 To use facileManager you need a web browser with cookies and JavaScript enabled.
@@ -39,7 +62,7 @@ To use facileManager you need a web browser with cookies and JavaScript enabled.
 [Minimum browser versions](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark#browser_compatibility)
 
 !!! note
-    Internet Explorer is not supported - it's too tiresome.
+    Internet Explorer and Edge are not supported - they are too tiresome.
 
 ## facileManager client (all modules)
 
