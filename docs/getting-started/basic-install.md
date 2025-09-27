@@ -6,7 +6,7 @@
     wget https://www.facilemanager.com/download/facilemanager-complete-latest.tar.gz
     tar zxf facilemanager-complete-latest.tar.gz
     sudo mv facileManager/server /var/www/html/facileManager
-    chown -R www-data /var/www/html/facileManager
+    sudo chown -R www-data /var/www/html/facileManager
     rm -rf facileManager
    ```
 2. Point your web browser to http://example.com/facileManager/ or your
