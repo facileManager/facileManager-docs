@@ -13,6 +13,30 @@
    virtualhost if you set one up (ie http://facileManager.example.com).
 3. Follow the installation wizard to setup your database and admin user.
 
+### Two-Factor Authentication
+
+facileManager v6.0.0 and later supports two-factor authentication via an authenticator app. In order to enable this functionality, your web server needs [composer installed](https://getcomposer.org/) along with the required modules.
+
+After you've installed composer for your specific environment, run the following on your facileManager installation:
+```
+cd facileManager
+composer install
+```
+
+Your installation will now have a `vendor` directory at the same level as the `server` directory. Please protect the `vendor` directory from direct access via your web browser. The best way to do this is ensure your installation uses virtual host (full domain or sub domain) with `server` being the document root.
+
+```
+wget https://www.facilemanager.com/download/facilemanager-complete-latest.tar.gz
+tar zxf facilemanager-complete-latest.tar.gz
+sudo mv facileManager /var/www/
+sudo chown -R www-data /var/www/facileManager/server
+cd /var/www/facileManager
+composer install
+```
+
+Ensure `/var/www/facileManager/server` is the document root in this case.
+
+
 ## Client Installation
 
 Install PHP and the required modules.

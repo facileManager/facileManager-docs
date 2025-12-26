@@ -23,6 +23,9 @@ You can reset the authentication method by setting the following in config.inc.p
 define('FM_NO_AUTH', true);
 ```
 
+### Password Reset Expiry
+Sets the amount of time the e-mailed password reset links are valid for.
+
 ### Login Message
 Define a message to be displayed at login (such as a terms and conditions) and optionally require users to acknowledge the message for authenication to succeed.
 
@@ -32,11 +35,17 @@ You can choose to allow clients to automatically register in the database or not
 ### API Support
 By enabling API support, users are able to create keypairs to authenticate with through the client scripts. This opens up the ability to make a limited selection of module changes without using the web interface.
 
+### Two-Factor Authentication
+By enabling the 2FA requirement, all users will be emailed a one-time passcode during login attempts. Users may update their profile to utilize an authenticator app instead (if the [2FA modules are installed](../getting-started/basic-install.md#two-factor-authentication)).
+
+### One-Time Passcode Expiry
+Sets the amount of time the e-mailed one-time passcodes are valid for.
+
 ### SSL
 You can choose to have facileManager enforce the use of SSL when a user tries to access the web app.
 
 ### Mailing
-There are a few things facileManager and its modules may need to send an e-mail about (such as password reset links). These settings allow you to configure the mailing settings to use for your environment and enable/disable mailing altogether.
+There are a few things facileManager and its modules may need to send an e-mail about (such as OTP and password reset links). These settings allow you to configure the mailing settings to use for your environment and enable/disable mailing altogether.
 
 ### Proxy Server
 Set the appropriate configuration if facileManager is behind a proxy server for Internet access.

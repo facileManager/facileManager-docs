@@ -1,4 +1,4 @@
-facileManager incorporates the use of multiple user accounts with granular permissions. This way you can limit access to your environment.
+facileManager incorporates the use of multiple user accounts with granular permissions which can be used to limit access to your environment.
 
 You can add, modify, and delete user accounts at **_Admin → Users & Groups_**.
 
