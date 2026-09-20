@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -2316,7 +2316,7 @@
 <p>The hostname or IP address containing the database.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;host&#39;] = &#39;localhost&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['host'] = 'localhost';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2325,7 +2325,7 @@
 <p>The username used to connect to the database.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;user&#39;] = &#39;fM&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['user'] = 'fM';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2334,7 +2334,7 @@
 <p>The passphrase used to connect to the database.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;pass&#39;] = &#39;secret-passphrase&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['pass'] = 'secret-passphrase';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2343,7 +2343,7 @@
 <p>The database name.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;name&#39;] = &#39;facileManager&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['name'] = 'facileManager';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2354,7 +2354,7 @@
 <p>The key file path.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;key&#39;] = &#39;/path/to/ssl.key&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['key'] = '/path/to/ssl.key';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2363,7 +2363,7 @@
 <p>The certificate file path.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;cert&#39;] = &#39;/path/to/ssl.cer&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['cert'] = '/path/to/ssl.cer';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2372,7 +2372,7 @@
 <p>The CA certificate path.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;ca&#39;] = &#39;/path/to/ca.pem&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['ca'] = '/path/to/ca.pem';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2381,7 +2381,7 @@
 <p>The directory path containing trusted CA files.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;capath&#39;] = &#39;/path/to/trusted/cas&#39;;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['capath'] = '/path/to/trusted/cas';</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2390,7 +2390,7 @@
 <p>The cipher to use.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG[&#39;db&#39;][&#39;cipher&#39;] = null;</span>
+<div class="highlight"><pre><span></span><code><span class="x">$__FM_CONFIG['db']['cipher'] = null;</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2401,7 +2401,7 @@
 <p>If all super-admin users get locked out, the authentication can be disabled.  This will set <strong>Authentication Method</strong> to <em>None</em> in the <strong><em>Settings → General</em></strong>.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">define(&#39;FM_NO_AUTH&#39;, true);</span>
+<div class="highlight"><pre><span></span><code><span class="x">define('FM_NO_AUTH', true);</span>
 </code></pre></div>
 </div>
 <p>You should remove this configuration entry once the authentication method is reset otherwise it will continue to get reset.</p>
@@ -2411,7 +2411,7 @@
 <p>facileManager performs checks to ensure the <strong><em>.htaccess</em></strong> file is present in the document root. In some cases, it may be necssary to disable the check. For example, you may opt to put the contents in the virtual host directive of your web server configuration.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">define(&#39;FM_NO_HTACCESS&#39;, true);</span>
+<div class="highlight"><pre><span></span><code><span class="x">define('FM_NO_HTACCESS', true);</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2420,7 +2420,7 @@
 <p>facileManager performs checks to ensure the rewrites (typically found in <em>.htaccess</em>) are working properly. In some cases, it may be necessary to disable the check. For example, you may need to disable this check if your web server is behind a proxy.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="x">define(&#39;FM_NO_REWRITE_TEST&#39;, true);</span>
+<div class="highlight"><pre><span></span><code><span class="x">define('FM_NO_REWRITE_TEST', true);</span>
 </code></pre></div>
 </div>
 </blockquote>
@@ -2577,7 +2577,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["header.autohide", "navigation.instant", "navigation.tracking", "navigation.footer", "navigation.sections", "navigation.instant", "navigation.instant.progress", "content.action.edit", "content.action.view", "search.suggest", "search.highlight", "search.share", "navigation.top", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
