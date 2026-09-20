@@ -6,11 +6,13 @@ Coded with the sysadmin in mind.
 
 Managing a server farm shouldn't be difficult. It shouldn't be monotonous either. This is where facileManager comes in.
 
-facileManager is a framework for a modular suite of web apps built with the system administrator in mind. Say good-bye to manual management of services running on multiple servers.
+facileManager is a framework for a modular suite of web apps built with the system administrator in mind. Say good-bye to manual management of services running on multiple servers and hello to a centralize web interface to manage the server farm.
 
-There are several software apps available that do a great job of managing _one server_, so facileManager is developed to overcome that limitation for sysadmins that work with a server farm where **multiple servers** are to be configured identically. Why manually edit server configuration files and push them out to all servers when you can have a web interface aid in the configuration and backend scripts perform the push or pull mechanism? There should no longer be a need.
+There are several software apps available that do a great job of managing _one server_, so facileManager is developed to overcome that limitation for sysadmins that work with a server farm where **multiple servers** are to be configured. Why manually edit server configuration files and push them out to all servers when you can have a centralized web interface aid in the configuration and backend scripts perform the push or pull mechanism? There should no longer be a need.
 
 facileManager is modular in design so you don't have to weed out the unnecessary modules for your environment - just have the ones you need installed. As more modules get developed, you can download and install them individually, too. The only requirement is to have the facileManager core package installed so the modules can function.
+
+User authentication supports local and LDAP users and 2FA is supported. Access can be restricted based on user or group permissions
 
 We truly hope your lives as system administrators will be eased with facileManager.
 

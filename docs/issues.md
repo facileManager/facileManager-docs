@@ -2,9 +2,9 @@
 facileManager and its modules comes as free software and without warranty. The [community of developers](https://github.com/facileManager/facileManager/graphs/contributors) who contribute to this project make every effort to deliver software without defects. However, no software is perfect. You can help us improve this project by accurately describing your issue.
 
 ## Issue policy
-This project is currently led by one developer ([@WillyXJ](https://github.com/WillyXJ)) in his spare time. Please respect our developers' time by using issues for reporting bugs only.
+This project is currently led by one developer ([@WillyXJ](https://github.com/WillyXJ)) in his spare time. Please respect our developers' time by using issues for reporting bugs and feature requests only.
 
-The project [FAQ](faq.md) is continuously updated with answers to many common questions. Refer to this first before creating a new issue.
+The project [FAQ](faq.md) is updated with answers to many common questions. Refer to this first before creating a new issue.
 
 Use [the discussions](https://github.com/facileManager/facileManager/discussions/) to post questions.
 
