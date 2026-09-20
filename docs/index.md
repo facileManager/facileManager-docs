@@ -41,7 +41,7 @@ Contributing financially is not the only way to support the project -- there are
 
 facileManager and its modules would not be what it is today with the many bugs, features, and pull requests that have been submitted.
 
-No contribution is too great or too small for us to review. Please [add your submission](https://github.com/facileManager/facileManager/issues), but please do fill out our template as it helps us to quickly understand your idea or reproduce the bug.
+No contribution is too great or too small for us to review. Please [add your submission](issues.md), but please do fill out our template as it helps us to quickly understand your idea or reproduce the bug.
 
 --8<--
 footer.md
